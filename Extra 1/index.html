@@ -13,42 +13,71 @@
   <body>
     <div class="container">
       <table class="table" border="1px">
-        <tr>
-          <th>S.N</th>
-          <th>Full Name</th>
-          <th>
-            <input type="radio" name="allPresent" id="allPresent" />All present
-          </th>
-          <th>
-            <input type="radio" name="allPresent" id="allAbsent" />All absent
-          </th>
-          <th></th>
-        </tr>
+        <form name="form1">
 
-        <tr>
-          <td>1.</td>
-          <td>Bipana</td>
-          <td><input type="radio" name="btn" id="present" />present</td>
-          <td><input type="radio" name="btn" id="absent" />absent</td>
-          <td><input type="radio" name="btn" id="absent" />late</td>
-        </tr>
-        <tr>
-          <td>1.</td>
-          <td>Sabina</td>
-          <td><input type="radio" name="btn1" id="present" />present</td>
-          <td><input type="radio" name="btn1" id="absent" />absent</td>
-          <td><input type="radio" name="btn1" id="absent" />late</td>
-        </tr>
-        <tr>
-          <td>1.</td>
-          <td>Malina</td>
-          <td><input type="radio" name="btn2" id="present" />present</td>
-          <td><input type="radio" name="btn2" id="absent" />absent</td>
-          <td><input type="radio" name="btn2" id="absent" />late</td>
-        </tr>
-      </table>
-      <div class="result">count:</div>
-    </div>
+          <tr>
+            <th>S.N</th>
+            <th>Full Name</th>
+            <th>
+              <input
+              type="radio"
+              name="letsCheck"
+              id="allPresent"
+              class="allPresent"
+              value="1"
+              onclick="selectAll()"
+              />All present
+            </th>
+            <th>
+              <input
+              type="radio"
+              name="letsCheck"
+              id="allAbsent"
+              class="allAbsent"
+              value="0"
+                onclick="selectAll()"
+                />All absent
+              </th>
+              <th></th>
+            </tr>
+            
+            <tr>
+              <td>1.</td>
+              <td>Bipana</td>
+              <td>
+                <input type="radio" name="btn" id="present" value="1" />present
+              </td>
+            <td>
+              <input type="radio" name="btn" id="absent" value="0" />absent
+            </td>
+            <td><input type="radio" name="btn" id="late" />late</td>
+          </tr>
+          <tr>
+            <td>1.</td>
+            <td>Sabina</td>
+            <td>
+              <input type="radio" name="btn1" id="present" value="1" />present
+            </td>
+            <td>
+              <input type="radio" name="btn1" id="absent" value="0" />absent
+            </td>
+            <td><input type="radio" name="btn1" id="late" />late</td>
+          </tr>
+          <tr>
+            <td>1.</td>
+            <td>Malina</td>
+            <td>
+              <input type="radio" name="btn2" id="present" value="1" />present
+            </td>
+            <td>
+              <input type="radio" name="btn2" id="absent" value="0" />absent
+            </td>
+            <td><input type="radio" name="btn2" id="late" />late</td>
+          </tr>
+        </table>
+        <div class="result">count:</div>
+      </form>
+      </div>
     <script src="index.js"></script>
   </body>
 </html>

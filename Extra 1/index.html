@@ -8,6 +8,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css">
     <title>Practice 1</title>
   </head>
   <body>
@@ -25,7 +26,7 @@
               id="allPresent"
               class="allPresent"
               value="1"
-              onclick="selectAll()"
+              onclick="selectAll(form1)"
               />All present
             </th>
             <th>
@@ -35,7 +36,7 @@
               id="allAbsent"
               class="allAbsent"
               value="0"
-                onclick="selectAll()"
+                onclick="selectAll(form1)"
                 />All absent
               </th>
               <th></th>
@@ -75,7 +76,9 @@
             <td><input type="radio" name="btn2" id="late" />late</td>
           </tr>
         </table>
-        <div class="result">count:</div>
+        <br><br>
+        <div class="result">Total number of present is</div>
+        <p class="result2">Total number of absent is</p>
       </form>
       </div>
     <script src="index.js"></script>

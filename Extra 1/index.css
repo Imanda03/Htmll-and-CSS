@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+.table{
+    margin-left: auto;
+    margin-right: auto;
+}
+th{
+    height: 30px;
+    background-color: rgb(74, 74, 74);
+    font-weight: bold;
+    color: white;
+}
+th,td{
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid rgb(240, 239, 239);
+}
+td{
+    background-color: rgb(194, 198, 196);
+    color: rgb(2, 0, 134);
+}

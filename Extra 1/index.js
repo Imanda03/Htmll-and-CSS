@@ -6,6 +6,7 @@ const result2 = document.querySelector('.result2');
 
 // const out1 = document.getElementById('out1');
 
+
 let count2 = 0;
 radios2.forEach(rad2 => {
     rad2.addEventListener('change', () => {
@@ -13,8 +14,11 @@ radios2.forEach(rad2 => {
         count2++;
         console.log(count2);
         result2.textContent = `Total number of absent is ${count2}`;
+
     })
 })
+
+
 let count = 0;
 radios.forEach(rad => {
     rad.addEventListener('change', () => {
@@ -24,6 +28,7 @@ radios.forEach(rad => {
         result.textContent = `Total number of present is ${count}`;
     })
 })
+
 
 
 

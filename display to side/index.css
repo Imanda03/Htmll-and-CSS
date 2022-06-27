@@ -1,0 +1,65 @@
+
+body{
+    background-color: #808080;
+    padding: 10px;
+}
+
+.main{
+    display: flex;
+}
+.div{
+    border: 1px solid black;
+    
+}
+
+.radio{
+    padding-top: 20px;
+}
+
+.form,button{
+    margin:10px;
+}
+.textBox{
+    background-color: #808080;
+    padding: 12px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+}
+
+.textBox::placeholder{
+    color: blue;
+}
+button{
+    background-color: aqua;
+    color: black;
+
+}
+
+.select{
+    padding-top: 20px;
+}
+
+select{
+    background-color: rgb(146, 150, 150);
+    color: black;
+}
+
+#output,#output2,#output3,#output4{
+    /* margin: 20px 0px 20px 0px; */
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+#output{
+    margin-top: 20px;
+}
+
+.out{
+    
+    display: block;
+    margin-top: 40px;
+    /* border: 1px solid black; */
+
+}

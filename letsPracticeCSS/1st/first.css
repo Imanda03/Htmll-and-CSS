@@ -1,0 +1,25 @@
+body{
+    background-image: url("abcd.PNG");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+p{
+    color: rgb(2, 26, 48);
+    border: 2px ridge tomato;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+h1{
+    /* margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    margin-right: 5%; */
+
+    /* margin: 5% 5% 5% 5%; */
+
+    margin: auto;
+}

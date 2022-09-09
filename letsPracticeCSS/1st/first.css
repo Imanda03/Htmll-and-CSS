@@ -1,4 +1,6 @@
 body{
+    height: auto;
+    width: 100%;
     background-image: url("abcd.PNG");
     background-repeat: no-repeat;
     background-position: center;
@@ -22,4 +24,43 @@ h1{
     /* margin: 5% 5% 5% 5%; */
 
     margin: auto;
+
+    /* padding-top:50px;
+    padding-right:50px;
+    padding-bottom:50px;
+    padding-left:50px; */
+
+    padding: 50px 50px 50px 50px;
+}
+
+.cointainer{
+    width: 300px;
+    border: 5px green solid;
+    padding:50px;
+    margin: 100px
+}
+
+#hello{
+    width: 250px;
+    border: 5px purple solid;
+    padding:25px;
+    margin:25px;
+}
+
+.outline{
+    outline-color: red;
+    outline-style:solid;
+    outline-width:thick;
+    outline-offset: 15px;
+}
+#textAlignment{
+    margin: 25px;
+    /* text-align:center; */
+    /* direction: rtl; */
+    /* unicode-bidi:bidi-override ; Text lai ulto parxa */
+    vertical-align: baseline;
+    text-decoration: overline underline;
+    text-decoration-color: aqua;
+    text-decoration-style: wavy;
+    text-transform: capitalize;
 }

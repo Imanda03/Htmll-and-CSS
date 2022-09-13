@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shake Animation</title>
+    <style>
+        #name{
+
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            border-color: blue;
+            background-color: aliceblue;
+            width: 25%;
+            padding: 12px 25px;
+            margin-top: 15%;
+            margin-left:25%;
+        }
+        ::placeholder{
+            color: rgb(0, 0, 0);
+            
+            
+        }
+        input:invalid{
+            animation: shake .3s;
+        }
+        @keyframes shake{
+            25% { transform: translateX(4px)}
+            50% { transform: translateX(-4px)}
+            75% { transform: translateX(4px) }
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- if the input is incorrect it will shake -->
+
+    <form action="">
+        <input type="text"
+        pattern="[a-z]*"
+                id="name"
+                placeholder="What's your name?"
+        >
+    </form>
+    
+</body>
+</html>

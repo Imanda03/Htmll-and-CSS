@@ -29,9 +29,51 @@
             
             <div class="slider">
                 <img src="./Radiance_img/left-arrow.png" id="prev">
+                <div class="preview">
+                    <img src="./Radiance_img/small1.png" class="active thubnail">
+                    <img src="./Radiance_img/small2.png" class="thubnail">
+                    <img src="./Radiance_img/small3.png" class="thubnail">
+                    <img src="./Radiance_img/small4.png" class="thubnail">
+                    <img src="./Radiance_img/small5.png" class="thubnail">
+                </div>
                 <img src="./Radiance_img/right-arrow.png" id="next">
             </div>
         </div>
+
+        <script>
+            var prev = document.getElementById("prev");
+            var next = document.getElementById("next");
+            var thumbnail = document.getElementsByClassName("thubnail")
+            var hero = document.getElementById("hero");
+             var background = new Array(
+                "./Radiance_img/bg1.png",
+                "./Radiance_img/bg2.png",
+                "./Radiance_img/bg3.png",
+                "./Radiance_img/bg4.png",
+                "./Radiance_img/bg5.png"
+             );
+
+             let i = 0
+             next.onclick = function(){
+                if(i<4){
+                    hero.style.backgroundImage = 'url("'+background[i+1]+'")';
+                    thumbnail[i+1].classList.add("active");
+                    thumbnail[i].classList.remove("active");
+                    i++
+
+                }
+             }
+             prev.onclick = function(){
+                if(i>0){
+                    hero.style.backgroundImage = 'url("'+background[i-1]+'")';
+                    thumbnail[i-1].classList.add("active");
+                    thumbnail[i].classList.remove("active");
+                    i--;
+
+                }
+             }
+
+        </script>
 
     </body>
 </html>
